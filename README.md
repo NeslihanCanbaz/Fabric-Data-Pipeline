@@ -12,22 +12,22 @@ The pipeline consists of three automated stages:
 ## 📊 Pipeline Execution Status
 Below is the confirmation of a successful end-to-end run. All activities completed successfully within the orchestration.
 
-<img src="pipeline_run.jpg" width="800">
+![Pipeline Success](images/pipeline_run.jpg)
 
 ## 💻 Transformation Logic (PySpark)
 The notebook uses Spark SQL functions to transform `CustomerName` into separate `FirstName` and `LastName` columns and derives date hierarchies.
 
-<img src="spark_code.png" width="800">
+![Spark Logic](images/spark_code.png)
 
 ## 🗄️ Final Data Schema
 The processed data is stored as a managed Delta table (`sales`) in the Lakehouse, optimized for analytical queries.
 
-<img src="schema.png" width="800">
+![Lakehouse Schema](images/schema.png)
 
 ## ⚙️ Source Configuration
 The ingestion layer is configured with a dynamic HTTP connection to fetch real-time data updates from the source repository.
 
-<img src="source_config.png" width="800">
+![Connection Config](images/source_config.png)
 
 ## 🛠️ Tech Stack
 - **Orchestration:** Microsoft Fabric Pipelines
