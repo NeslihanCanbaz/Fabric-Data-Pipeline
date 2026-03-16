@@ -17,7 +17,7 @@ Below is the confirmation of a successful end-to-end run. All activities complet
 ## 💻 Transformation Logic (PySpark)
 The notebook uses Spark SQL functions to transform `CustomerName` into separate `FirstName` and `LastName` columns and derives date hierarchies.
 
-![Spark Logic](spark_code.jpg)
+![Spark Logic](spark_code.png)
 
 ## 🗄️ Final Data Schema
 The processed data is stored as a managed Delta table (`sales`) in the Lakehouse, optimized for analytical queries.
